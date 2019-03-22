@@ -94,7 +94,7 @@ end
 awacs3spawn()
 
 
-AWACS_Tankers  = SET_GROUP:New():FilterPrefixes({"BLUE_AWACS", 'RED_AWACS'}):FilterStart()
+AWACS_Tankers  = SET_GROUP:New():FilterPrefixes({"BLUE_AWACS", 'RED_AWACS', "Blue_Tanker"}):FilterStart()
 SCHEDULER:New(nil,function()
   AWACS_Tankers:ForEachGroupAlive(function(_group)
     local _unit = _group:GetUnit(1)
