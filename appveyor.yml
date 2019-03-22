@@ -1,0 +1,26 @@
+version: 1.0.0.{build}
+skip_branch_with_pr: true
+skip_tags: false
+environment:
+  fast_finish: true
+install:
+- cmd: choco install 7zip.commandline
+cache:
+- C:\ProgramData\chocolatey\lib
+- C:\ProgramData\chocolatey\bin
+build_script:
+- cmd: 7za a -bb0 dummy.miz C:\projects\PG_Alive\* -xr!.git -x!*.miz -x!*.yml
+- cmd: IF /I "%APPVEYOR_REPO_TAG%"=="true" (ren dummy.miz OPUF_%APPVEYOR_REPO_TAG_NAME%.miz) ELSE (ren dummy.miz OPUF_%APPVEYOR_BUILD_VERSION%.miz)
+test: off
+artifacts:
+- path: '*.miz'
+  name: PG_Alive
+deploy:
+- provider: GitHub
+  auth_token:
+    secure: 
+  artifact: 'PG_Alive'
+  draft: false
+  force_update: true
+  on:
+    APPVEYOR_REPO_TAG: true
