@@ -5,4 +5,5 @@ mapResource =
     ["ResKey_Action_1910"] = "mist_4_3_74.lua",
     ["ResKey_Action_1911"] = "CTLD.lua",
     ["ResKey_Action_5481"] = "Moose.lua",
+    ["ResKey_Action_5507"] = "PGA_Config.lua",
 } -- end of mapResource
