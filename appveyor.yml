@@ -14,12 +14,12 @@ build_script:
 test: off
 artifacts:
 - path: '*.miz'
-  name: PG_Alive
+  name: PG_Entropy
 deploy:
 - provider: GitHub
   auth_token:
     secure: 
-  artifact: 'PG_Alive'
+  artifact: 'PG_Entropy'
   draft: false
   force_update: true
   on:

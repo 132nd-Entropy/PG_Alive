@@ -13424,7 +13424,7 @@ mission =
                                         ["AddPropAircraft"] =
                                         {
                                             ["ALE39Loadout"] = 0,
-                                            ["INSAlignmentStored"] = false,
+                                            ["INSAlignmentStored"] = true,
                                             ["IlsChannel"] = 1,
                                             ["KY28Key"] = 1,
                                             ["LGB1"] = 8,
@@ -13521,7 +13521,7 @@ mission =
                                             ["ammo_type"] = 1,
                                             ["chaff"] = 140,
                                             ["flare"] = 60,
-                                            ["fuel"] = 3380,
+                                            ["fuel"] = 7348,
                                             ["gun"] = 100,
                                             ["pylons"] =
                                             {
@@ -13540,7 +13540,7 @@ mission =
                                         ["AddPropAircraft"] =
                                         {
                                             ["ALE39Loadout"] = 0,
-                                            ["INSAlignmentStored"] = false,
+                                            ["INSAlignmentStored"] = true,
                                             ["IlsChannel"] = 1,
                                             ["KY28Key"] = 1,
                                             ["LGB1"] = 8,
@@ -13552,6 +13552,71 @@ mission =
                                             ["TacanChannel"] = 0,
                                             ["UseLAU138"] = true,
                                         }, -- end of ["AddPropAircraft"]
+                                        ["Radio"] =
+                                        {
+                                            [1] =
+                                            {
+                                                ["channels"] =
+                                                {
+                                                    [1] = 225,
+                                                    [2] = 258,
+                                                    [3] = 260,
+                                                    [4] = 270,
+                                                    [5] = 255,
+                                                    [6] = 259,
+                                                    [7] = 262,
+                                                    [8] = 257,
+                                                    [9] = 253,
+                                                    [10] = 263,
+                                                    [11] = 267,
+                                                    [12] = 254,
+                                                    [13] = 264,
+                                                    [14] = 266,
+                                                    [15] = 265,
+                                                    [16] = 252,
+                                                    [17] = 268,
+                                                    [18] = 269,
+                                                    [19] = 268,
+                                                    [20] = 269,
+                                                }, -- end of ["channels"]
+                                            }, -- end of [1]
+                                            [2] =
+                                            {
+                                                ["channels"] =
+                                                {
+                                                    [1] = 124,
+                                                    [2] = 258,
+                                                    [3] = 260,
+                                                    [4] = 270,
+                                                    [5] = 255,
+                                                    [6] = 259,
+                                                    [7] = 262,
+                                                    [8] = 257,
+                                                    [9] = 253,
+                                                    [10] = 263,
+                                                    [11] = 267,
+                                                    [12] = 254,
+                                                    [13] = 264,
+                                                    [14] = 266,
+                                                    [15] = 265,
+                                                    [16] = 252,
+                                                    [17] = 268,
+                                                    [18] = 269,
+                                                    [19] = 268,
+                                                    [20] = 269,
+                                                    [21] = 225,
+                                                    [22] = 258,
+                                                    [23] = 260,
+                                                    [24] = 270,
+                                                    [25] = 255,
+                                                    [26] = 259,
+                                                    [27] = 262,
+                                                    [28] = 257,
+                                                    [29] = 253,
+                                                    [30] = 263,
+                                                }, -- end of ["channels"]
+                                            }, -- end of [2]
+                                        }, -- end of ["Radio"]
                                         ["alt"] = 28,
                                         ["alt_type"] = "BARO",
                                         ["callsign"] =
@@ -13579,7 +13644,7 @@ mission =
                                             }, -- end of ["pylons"]
                                         }, -- end of ["payload"]
                                         ["psi"] = 0,
-                                        ["skill"] = "High",
+                                        ["skill"] = "Client",
                                         ["speed"] = 220.97222222222,
                                         ["type"] = "F-14B",
                                         ["unitId"] = 7340,
@@ -31519,7 +31584,7 @@ E057 28 169",
             [5] = 17,
         }, -- end of ["red"]
     }, -- end of ["coalitions"]
-    ["currentKey"] = 981749,
+    ["currentKey"] = 986574,
     ["date"] =
     {
         ["Day"] = 5,
@@ -34776,11 +34841,11 @@ E057 28 169",
     }, -- end of ["groundControl"]
     ["map"] =
     {
-        ["centerX"] = -134932.40148138,
-        ["centerY"] = -193037.67889421,
-        ["zoom"] = 10759.825966466,
+        ["centerX"] = 378347.18429847,
+        ["centerY"] = -348568.81093596,
+        ["zoom"] = 21721.109044055,
     }, -- end of ["map"]
-    ["maxDictId"] = 5571,
+    ["maxDictId"] = 5573,
     ["pictureFileNameB"] =
     {
     }, -- end of ["pictureFileNameB"]
@@ -34847,9 +34912,9 @@ E057 28 169",
     {
         ["actions"] =
         {
-            [1] = "a_do_script_file(getValueResourceByKey(\"ResKey_Action_5481\"));",
+            [1] = "a_do_script_file(getValueResourceByKey(\"ResKey_Action_5573\"));",
             [2] = "a_do_script_file(getValueResourceByKey(\"ResKey_Action_1910\")); mission.trig.func[2]=nil;",
-            [3] = "a_out_sound_c(21, getValueResourceByKey(\"ResKey_Action_1907\"));a_out_sound_c(21, getValueResourceByKey(\"ResKey_Action_1908\")); mission.trig.func[3]=nil;",
+            [3] = "a_out_sound_c(21, getValueResourceByKey(\"ResKey_Action_1907\"), 0);a_out_sound_c(21, getValueResourceByKey(\"ResKey_Action_1908\"), 0); mission.trig.func[3]=nil;",
             [4] = "a_do_script_file(getValueResourceByKey(\"ResKey_Action_1911\")); mission.trig.func[4]=nil;",
             [5] = "a_do_script_file(getValueResourceByKey(\"ResKey_Action_5525\")); mission.trig.func[5]=nil;",
             [6] = "a_do_script_file(getValueResourceByKey(\"ResKey_Action_5524\")); mission.trig.func[6]=nil;",
@@ -35036,7 +35101,7 @@ E057 28 169",
                         [1] = "",
                         [2] = "",
                     }, -- end of ["ai_task"]
-                    ["file"] = "ResKey_Action_5481",
+                    ["file"] = "ResKey_Action_5573",
                     ["predicate"] = "a_do_script_file",
                 }, -- end of [1]
             }, -- end of ["actions"]
@@ -35260,7 +35325,6 @@ E057 28 169",
         ["enable_fog"] = true,
         ["fog"] =
         {
-            ["density"] = 0,
             ["thickness"] = 430,
             ["visibility"] = 4430,
         }, -- end of ["fog"]
